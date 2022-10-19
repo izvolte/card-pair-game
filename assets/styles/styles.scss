@@ -1,0 +1,91 @@
+@import "fonts";
+
+$blue: #004980;
+$blue-light: #0080C1;
+$white: #FFFFFF;
+$salad: #7AC100;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Stratos Skyeng", sans-serif;
+  background-color: $blue;
+}
+
+.screen {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.select-level {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__form {
+    max-width: 480px;
+    padding: 52px 69px 48px;
+    background: #C2F5FF;
+    border-radius: 12px;
+  }
+
+  &__header {
+    color: $blue;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  &__choose-level {
+    margin-bottom: 67px;
+  }
+
+  &__button {
+    margin: 0 auto;
+  }
+}
+
+.choose-level {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
+  &__input {
+    display: none;
+  }
+
+  &__level {
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+
+  &__number {
+    width: 98px;
+    height: 98px;
+    background: $white;
+    border-radius: 12px;
+    font-size: 64px;
+    line-height: 1.5;
+    color: $blue-light;
+  }
+}
+
+.button {
+  width: 246px;
+  height: 50px;
+  background: $salad;
+  border-radius: 12px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $white;
+  border: none;
+}
