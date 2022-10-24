@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Карточная игра</title>
+  <link rel="stylesheet" href="../../src/assets/styles/styles.css" />
+</head>
+<body>
+<div class="screen" id="game">
+  <div class="screen__game game">
+    <div class="game__header">
+      <div class="game__timer timer">
+        <div class="timer__section">
+          <div class="timer__title">
+            min
+          </div>
+          <div class="timer__value">
+            00
+          </div>
+        </div>
+        <div class="timer__sep">
+          .
+        </div>
+        <div class="timer__section">
+          <div class="timer__title">
+            sec
+          </div>
+          <div class="timer__value">
+            00
+          </div>
+        </div>
+      </div>
+      <div class="game__repeat">
+        <button class="game__button button">
+          Начать заново
+        </button>
+      </div>
+    </div>
+    <div class="game__canvas canvas">
+      <div class="canvas__row">
+        <div class="canvas__card card">
+          <div class="card__position">
+            <div class="card__value">A</div>
+            <div class="card__mini-suit">
+              <img src="../assets/img/clover.svg" alt="">
+            </div>
+          </div>
+          <div class="card__suit">
+            <img src="../assets/img/clover.svg" alt="">
+          </div>
+          <div class="card__position card__position_bottom">
+            <div class="card__value">A</div>
+            <div class="card__mini-suit">
+              <img src="../assets/img/clover.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="canvas__card card">
+          <div class="card__position">
+            <div class="card__value">6</div>
+            <div class="card__mini-suit">
+              <img src="../assets/img/diamonds.svg" alt="">
+            </div>
+          </div>
+          <div class="card__suit">
+            <img src="../assets/img/diamonds.svg" alt="">
+          </div>
+          <div class="card__position card__position_bottom">
+            <div class="card__value">A</div>
+            <div class="card__mini-suit">
+              <img src="../assets/img/diamonds.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="canvas__row">
+        <div class="canvas__card card card_close">
+          <img src="../assets/img/close.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

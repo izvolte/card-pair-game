@@ -1,0 +1,101 @@
+.game {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 20px 0;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+}
+
+.timer {
+  color: $white;
+  display: flex;
+  align-items: flex-end;
+
+
+  &__title {
+    font-size: 16px;
+    text-align: right;
+  }
+
+  &__value {
+    font-size: 64px;
+    line-height: 72px;
+    text-align: right;
+  }
+
+  &__sep {
+    font-size: 64px;
+    line-height: 72px;
+  }
+}
+
+.card {
+  width: 95px;
+  height: 133px;
+  background-color: $white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  overflow: hidden;
+
+  &__position {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+
+    &_bottom {
+      left: unset;
+      top: unset;
+      bottom: 5px;
+      right: 5px;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__value {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 2px;
+  }
+
+  &__mini-suit {
+    width: 7px;
+    height: 7px;
+    margin: auto;
+    display: flex;
+  }
+
+  &__suit {
+    width: 20px;
+    height: 20px;
+  }
+
+  img {
+    object-fit: contain;
+  }
+
+  &_close {
+    img {
+      object-fit: fill;
+    }
+  }
+}
+
+.canvas {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+}
