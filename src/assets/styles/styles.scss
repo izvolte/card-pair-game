@@ -1,17 +1,22 @@
-@import "fonts";
+@import 'fonts';
 
 $blue: #004980;
-$blue-light: #0080C1;
-$white: #FFFFFF;
-$salad: #7AC100;
+$blue-light: #0080c1;
+$white: #ffffff;
+$salad: #7ac100;
 
 * {
   margin: 0;
   padding: 0;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 body {
-  font-family: "Stratos Skyeng", sans-serif;
+  font-family: 'Stratos Skyeng', sans-serif;
   background-color: $blue;
 }
 
@@ -30,7 +35,7 @@ body {
   &__form {
     max-width: 480px;
     padding: 52px 69px 48px;
-    background: #C2F5FF;
+    background: #c2f5ff;
     border-radius: 12px;
   }
 
@@ -94,3 +99,5 @@ body {
   color: $white;
   border: none;
 }
+
+@import "game";

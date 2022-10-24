@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Карточная игра</title>
-    <link rel="stylesheet" href="assets/styles/styles.css"/>
-</head>
-<body>
-
-<div class="screen" id="start">
-    <div class="screen__select-level select-level">
+    <link rel="stylesheet" href="src/assets/styles/styles.css" />
+  </head>
+  <body>
+    <div class="screen" id="start">
+      <div class="screen__select-level select-level">
         <form action="" class="select-level__form">
-            <div class="select-level__header">
-                Выбери сложность
-            </div>
-            <div class="select-level__choose-level choose-level">
-                <label class="choose-level__level">
-                    <input class="choose-level__input" type="radio" name="level" value="1">
-                    <span class="choose-level__number">1</span>
-                </label>
-                <label class="choose-level__level">
-                    <input class="choose-level__input" type="radio" name="level" value="2">
-                    <span class="choose-level__number">2</span>
-                </label>
-                <label class="choose-level__level">
-                    <input class="choose-level__input" type="radio" name="level" value="3">
-                    <span class="choose-level__number">3</span>
-                </label>
-            </div>
-            <button type="submit" class="select-level__button button">Старт</button>
+          <div class="select-level__header">Выбери сложность</div>
+          <div class="select-level__choose-level choose-level">
+            <label class="choose-level__level">
+              <input
+                class="choose-level__input"
+                type="radio"
+                name="level"
+                value="1"
+              />
+              <span class="choose-level__number">1</span>
+            </label>
+            <label class="choose-level__level">
+              <input
+                class="choose-level__input"
+                type="radio"
+                name="level"
+                value="2"
+              />
+              <span class="choose-level__number">2</span>
+            </label>
+            <label class="choose-level__level">
+              <input
+                class="choose-level__input"
+                type="radio"
+                name="level"
+                value="3"
+              />
+              <span class="choose-level__number">3</span>
+            </label>
+          </div>
+          <button type="submit" class="select-level__button button">
+            Старт
+          </button>
         </form>
+      </div>
     </div>
-</div>
 
-<script type="module" src="./src/index.js"></script>
-</body>
+    <script type="module" src="./src/index.js"></script>
+  </body>
 </html>
